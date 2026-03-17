@@ -1,8 +1,8 @@
-frase = "SAN X COR 15/03/26"
+frase = "Mc Guimê - Funk Raíz (Funk in House)"
 
 indice = 0
-letra_repetida = ""
 quantidade_atual = 0
+letra_repetida = ""
 
 while indice < len(frase):
     letra_atual = frase[indice]
@@ -11,10 +11,10 @@ while indice < len(frase):
         indice += 1
         continue
 
-    quantidade_total = frase.count(letra_atual)
+    quantidade_repetida = frase.count(letra_atual)
 
-    if quantidade_atual < quantidade_total:
-        quantidade_atual = quantidade_total
+    if quantidade_atual <= quantidade_repetida:
+        quantidade_atual = quantidade_repetida
         letra_repetida = letra_atual
     indice += 1
-print(f"A letra mais repetida é a '{letra_repetida}' com a quantidade de {quantidade_atual} vezes.")
+print(f"A quantidade em que a letra '{letra_repetida}' foi repetida é de {quantidade_atual} vezes.")
