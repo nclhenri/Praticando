@@ -1,7 +1,7 @@
-palavra_secreta = "webcam"
+palavra_secreta = "timelapse"
 tentativas = 0
 letras_acertadas = ""
-tentativa = input("Digite uma letra")
+tentativa = input("Inicie com um chute: ")
 
 while tentativa != palavra_secreta:
 
@@ -26,6 +26,6 @@ while tentativa != palavra_secreta:
             palavra_formada += "*"
     
     print(f"Palavra gerada: {palavra_formada}")
-    tentativa = input("Digite outra letra:")
+    tentativa = input("Digite outra letra: ")
 print(f"PARABÉNS! Você acertou a palavra secreta!")
 print(f"A palavra secreta era: {palavra_secreta}")
