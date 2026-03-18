@@ -1,22 +1,17 @@
-palavra_secreta = "badbunny"
-tentativas = 0
+palavra_secreta = "SãoPauloTriMundial"
 letras_acertadas = ""
+tentativas = 0
 print("Teste a sua sorte!")
 tentativa = input("Digite uma letra:")
 
 while tentativa != palavra_secreta:
 
-    if len(tentativa) > 1:
-        print("Você digitou mais de uma letra. Tente novamente:")
-        tentativa = input("")
-        tentativas += 1
-        continue
-
     if tentativa in palavra_secreta:
-        print(f"A letra {tentativa} TEM na palavra secreta!")
+        print("Essa letra TEM na palavra secreta!")
+        tentativas += 1
         letras_acertadas += tentativa
     else:
-        print(f"A letra {tentativa} NÃO TEM na palavra secreta!")
+        print("Essa letra NÃO TEM na palavra secreta!")
 
     palavra_formada = ""
 
@@ -25,9 +20,11 @@ while tentativa != palavra_secreta:
             palavra_formada += letra_secreta
         else:
             palavra_formada += "*"
-    
-    tentativas += 1
+
     print(f"Palavra gerada: {palavra_formada}")
     tentativa = input("Digite outra letra:")
-print(f"PARABÉNS! Você acertou a palavra secreta. Em {tentativas} tentativas!")
-print(f"A palavra secreta era: {palavra_secreta}")
+    tentativas += 1
+print("PARABÉNS!!! Você acertou!")
+print(f"A palavra secreta é: {palavra_secreta}")
+print(f"Tentativas necessárias: {tentativas}")
+    
