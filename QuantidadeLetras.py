@@ -1,7 +1,7 @@
-frase = "Nintendo Music"
-indice = 0
-quantidade_atual = 0
+frase = "Nicolas Henrique"
 letra_repetida = ""
+quantidade_atual = 0
+indice = 0
 
 while indice < len(frase):
     letra_atual = frase[indice]
@@ -16,4 +16,4 @@ while indice < len(frase):
         quantidade_atual = quantidade_total
         letra_repetida = letra_atual
     indice += 1
-print(f"A letra em que mais se repete é '{letra_repetida}', {quantidade_atual} vezes")
+print(f"A letra mais repetida foi '{letra_repetida}', {quantidade_atual} vezes.")
